@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="STATA YouTube Readonly: a personal channel analytics tool. About, privacy, and terms of use.">
+  <meta name="referrer" content="no-referrer">
+  <title>STATA YouTube Readonly — About, Privacy &amp; Terms</title>
+  <style>
+    :root { color-scheme: light; --ink: #172d36; --muted: #485e68; --accent: #076b70; --line: #d5e2e6; --paper: #ffffff; --wash: #f2f7f9; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1.5rem; }
+    body { margin: 0; background: var(--wash); color: var(--ink); font: 1rem/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .page { max-width: 58rem; margin: 3rem auto; padding: 3rem clamp(1.25rem, 5vw, 4rem); background: var(--paper); border-top: 5px solid var(--accent); }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { max-width: 15ch; margin: 1.5rem 0 1rem; font: 600 clamp(2.2rem, 6vw, 3.6rem)/1.06 "Avenir Next", "Segoe UI", sans-serif; letter-spacing: -.035em; }
+    h2 { margin: 0 0 1.4rem; font-size: 1.8rem; }
+    h3 { margin: 1.7rem 0 .55rem; font-size: 1.08rem; }
+    p { margin: .7rem 0 1rem; }
+    a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: .15em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .draft { display: inline-block; padding: .25rem .65rem; background: #edf3f5; color: var(--muted); font-size: .85rem; }
+    .intro { max-width: 42rem; color: var(--muted); font-size: 1.15rem; }
+    .scope { color: var(--accent); font-size: .9rem; font-weight: 600; }
+    nav { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: 1.6rem; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; }
+    section { padding-top: 2.4rem; margin-top: 2.4rem; border-top: 1px solid var(--line); }
+    ul { padding-left: 1.3rem; }
+    li + li { margin-top: .65rem; }
+    footer { border-top: 1px solid var(--line); margin-top: 2.4rem; padding-top: 1.4rem; color: var(--muted); font-size: .9rem; }
+    .skip { position: absolute; left: 1rem; top: -5rem; padding: .6rem 1rem; background: var(--paper); }
+    .skip:focus { top: 1rem; }
+    @media (max-width: 40rem) { .page { margin: 0; padding-top: 2rem; padding-bottom: 2rem; } }
+    @media print { body { background: white; } .page { margin: 0; max-width: none; padding: 0; border: 0; } nav, .skip { display: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="page">
+    <header>
+      <span class="draft">Personal analytics tool · Read-only access</span>
+      <h1>STATA YouTube Readonly</h1>
+      <p class="intro">A personal tool for understanding the owner's YouTube channels, with local storage, SQL queries, and search on the owner's Mac.</p>
+      <p class="scope">Official APIs · Read-only access · Owner-directed analysis</p>
+      <nav aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>STATA YouTube Readonly helps the channel owner collect and review channel and video metadata, YouTube Analytics reports, and available revenue data through official Google and YouTube APIs. It also supports locally imported YouTube Studio exports.</p>
+        <p>The tool provides a local record of source reports, SQL analysis, and text and semantic search. It requests no YouTube write scopes and does not upload, edit, publish, or delete YouTube content.</p>
+        <p>It is a personal tool operated for the channel owner, not a public service for connecting other people's accounts.</p>
+      </section>
+
+      <section id="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy</h2>
+        <h3>Data accessed and its purpose</h3>
+        <p>With the owner's authorization, the tool reads identifiers and metadata for accessible channels and videos, analytics measurements, and revenue reports where access is available. This information supports the owner's report collection, comparisons, calculations, and searches.</p>
+
+        <h3>Local storage and processing</h3>
+        <p>Source files, the database, and the search model are stored on the owner's Mac. OAuth access and refresh tokens are stored in macOS Keychain. Search embeddings are generated locally; texts are not sent to an external service for vectorization.</p>
+
+        <h3>Owner-directed use of AI services</h3>
+        <p>The owner also uses AI tools such as Codex and Claude. When the owner requests analysis, selected data may be sent to and processed by the AI services the owner chooses. The owner controls these recipients and the analysis requested. This is distinct from local embedding generation.</p>
+        <p>Such sharing is limited to the requested analysis with the owner's authorization. It is not a sale of data, advertising use, or public publication. AI services operate under their own terms and the owner's account settings; this notice makes no claims about those providers' retention or model-training policies.</p>
+
+        <h3>Limits on use</h3>
+        <p>The tool does not train AI models on Google user data, sell that data, or use it for advertising, credit scoring, or lending decisions. Use and transfer of information received from Google APIs must follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Limited Use requirements</a>. This page does not imply Google approval or verification.</p>
+
+        <h3>Retention, revocation, and deletion</h3>
+        <p>Local reports, database records, and derived search data are retained until the owner deletes them. The owner can revoke the app's authorization through <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Revocation stops new authorized requests; it does not automatically delete copies already stored locally.</p>
+        <p>To request deletion of local copies, contact the operator at <a href="mailto:admin@masterskaya.com.co">admin@masterskaya.com.co</a> and identify the reports or periods to remove. The operator will confirm the scope, including source files, database records, search indexes, and local backups, before deleting them. Copies previously sent to an AI service must be managed through that service's controls.</p>
+
+        <h3>Contact</h3>
+        <p>For questions about access, privacy, or deletion, email <a href="mailto:admin@masterskaya.com.co">admin@masterskaya.com.co</a>.</p>
+      </section>
+
+      <section id="terms" aria-labelledby="terms-title">
+        <h2 id="terms-title">Terms</h2>
+        <ul>
+          <li>Use is limited to the channel owner's personal analysis of data they are authorized to access.</li>
+          <li>YouTube reports may be delayed, revised, incomplete, or unavailable. Report periods, filters, and coverage should be checked before comparing or combining results.</li>
+          <li>Local calculations and AI-assisted interpretations are analytical aids. The owner should verify important conclusions against the source reports.</li>
+          <li>The owner can stop using the tool and revoke API access at any time. Local deletion is handled as described in <a href="#privacy">Privacy</a>.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Application and support: STATA YouTube Readonly · <a href="mailto:admin@masterskaya.com.co">admin@masterskaya.com.co</a></p>
+      <p>Last updated: 2 October 2026.</p>
+    </footer>
+  </div>
+</body>
+</html>
